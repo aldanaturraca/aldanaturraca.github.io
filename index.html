@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="contact.css">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css">
 </head>
 <body>
     <header>
@@ -24,24 +24,43 @@
         </ul>
     </div>
 
-<section>
-    <h1>Contacto</h1>
-    <p>
-        <b>Nuestra dirección:</b> <br>
-        <br>Facultad de Ciencia Política y Relaciones Internacionales - Escuela de RRII - 
-        <br> Riobamba 250 bis - Monoblock I - C.U.R. - Rosario - Argentina
-        <br>
-        <b> <br>Nuestro correo:</b> <br>
-        <br>grupoestudioue@gmail.com 
-        <br>
-        <b> <br>Nuestro teléfono:</b> <br>
-        <br>+54341 4808589 interno 129
-        <br>
-        <b><br>Nuestras redes:</b> <br>
-        <br> <u>Instagram:</u> @geueunr <br>
-        <br> <u>Twitter:</u> @geueunr <br>
-        <br> <u>Facebook:</u> Grupo de Estudio sobre la Unión Europea - GEUE
-    </p>
-</section>
+    <h1 style="color:blue">Formulario para consultas</h1>
+
+    <section>
+        <form>
+            <!--Se agrega Nombre, Apellido, indique sexo, seleccione país a ejemplo de Bootstrap-->
+            <form method="" action="">
+            Nombre: <input type="text" name="nombre">
+               <br>
+            Apellido: <input type="text" name="apellido">
+               <br>
+            Indique sexo: <br>
+              Masculino: <input type="radio" name="masc"><br>
+              Femenino: <input type="radio" name="fem"><br>
+              Otro: <input type="radio" name="otro"><br>
+            <!--Esto es copiado de Bootstrap-->
+            <div class="form-group">
+            <label for="exampleFormControlInput1">Correo electronico</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            Seleccione su país 
+             <select id="pais" name="pais">
+                <option value="arg">Argentina</option>
+                <option value="br">Brasil</option>
+                <option value="chi">Chile</option>
+                <option value="uru">Uruguay</option>
+            </select>
+             <br>
+            <!--Esto también es copiado de Bootstap-->   
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Su consulta</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </form>
+       <input type="submit" value="Enviar">
+          <input type="reset" name="Cancelar">
+        </form>
+    </section>
+
 </body>
 </html>

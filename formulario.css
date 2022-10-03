@@ -1,0 +1,43 @@
+header{
+   background-color: rgb(18, 6, 82);
+   display: flex;
+}
+
+body{
+   background-image: url(https://leyton.com/de/wp-content/uploads/sites/6/2020/09/Eu-Grants-1.jpg);
+   background-size:cover;
+   background-repeat: no-repeat;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo.img{
+  height: 50px;
+}
+
+#navegador li{
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;
+ }
+ #navegador li a {
+    padding: 2px 7px 2px 7px;
+    color: #666;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    text-decoration: none;
+ }
+ #navegador li a:hover{
+    background-color: rgb(18, 6, 82);
+    color: rgb(255, 255, 255) }
+
+section{
+      background-color: rgba(0, 8, 122, 0.603);
+      float: left;
+      overflow: hidden;
+      margin-right: 30%;
+      margin: 0 auto;
+   }
